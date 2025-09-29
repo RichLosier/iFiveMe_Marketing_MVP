@@ -1,0 +1,28 @@
+{
+  "id": "approval_workflow_20250924_211936_105300",
+  "type": "submit_for_approval",
+  "priority": 8,
+  "data": {
+    "title": "Post LinkedIn Expert - Innovation iFiveMe 2025",
+    "content": "🏆 Vision 2025 : iFiveMe redéfinit l'excellence du networking mondial\n\nEn tant que pionniers de l'intelligence relationnelle, nous façonnons l'avenir des interactions professionnelles avec une approche scientifique du networking.\n\n🎯 **Notre Impact Mesurable :**\n• +450% d'efficacité networking chez nos clients Fortune 500\n• 94% de taux de mémorisation post-interaction\n• ROI moyen 1:15 sur investissements relationnels\n• Intégration seamless dans 89% des écosystèmes enterprise\n\n💡 **Innovation Breakthrough 2025 :**\n✅ IA prédictive de compatibilité business\n✅ Orchestration multi-canal intelligente\n✅ Analytics comportementales en temps réel\n✅ Scoring dynamique d'opportunités\n\n🌟 **La Différence iFiveMe :**\nNous ne vendons pas un produit. Nous certifions votre excellence relationnelle.\n\n*Rejoignez l'élite du networking intelligent.*\n\n🚀 Consultation stratégique : iFiveMe.com/excellence\n\n#LeadershipDigital #NetworkingIntelligence #iFiveMe #BusinessExcellence #Innovation2025",
+    "platform": "LinkedIn",
+    "created_by": "Sarah Martinez - Head of Content",
+    "scheduled_time": "2024-09-26T09:00:00"
+  },
+  "created_at": "2025-09-24 21:19:36.105306",
+  "status": "completed",
+  "result": {
+    "post_id": "857a286b-e3ed-4163-bebe-dcf500ed36fa",
+    "approval_token": "77514867-1287-46cd-b885-ae0de61bdef5",
+    "status": "submitted_for_approval",
+    "approval_email_sent": true,
+    "expires_at": "2025-09-25T21:19:36.105594",
+    "approval_urls": {
+      "approve": "https://approve.ifiveme.com/approve/857a286b-e3ed-4163-bebe-dcf500ed36fa/77514867-1287-46cd-b885-ae0de61bdef5",
+      "reject": "https://approve.ifiveme.com/reject/857a286b-e3ed-4163-bebe-dcf500ed36fa/77514867-1287-46cd-b885-ae0de61bdef5",
+      "edit": "https://approve.ifiveme.com/edit/857a286b-e3ed-4163-bebe-dcf500ed36fa/77514867-1287-46cd-b885-ae0de61bdef5"
+    },
+    "notification_sent_to": "richard@ifiveme.com"
+  },
+  "error": null
+}
