@@ -1,0 +1,48 @@
+# Render.com Configuration pour iFiveMe Marketing MVP
+services:
+  # Service principal - Control Tower iFiveMe
+  - type: web
+    name: ifiveme-control-tower
+    env: python
+    plan: starter
+    buildCommand: "pip install -r requirements.txt && npm install"
+    startCommand: "python ifiveme_control_tower.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.1
+      - key: PORT
+        value: 5001
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: false
+
+  # Interface Web d'Approbation Marketing
+  - type: web
+    name: ifiveme-web-approval
+    env: python
+    plan: starter
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "cd web_approval && python app.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.1
+      - key: PORT
+        value: 8080
+      - key: FLASK_ENV
+        value: production
+
+# Variables d'environnement globales
+envVars:
+  - key: IFIVEME_ADMIN_EMAIL
+    value: richard@ifiveme.com
+  - key: IFIVEME_ADMIN_PASSWORD
+    sync: false  # Variable secrète
+  - key: OPENAI_API_KEY
+    sync: false  # Variable secrète
+  - key: ANTHROPIC_API_KEY
+    sync: false  # Variable secrète
+  - key: GOOGLE_DRIVE_FOLDER_ID
+    value: 1RE8sOSWPS8YhZsaSHRLIouZV08p1iUk0
+  - key: NODE_VERSION
+    value: 22.19.0
