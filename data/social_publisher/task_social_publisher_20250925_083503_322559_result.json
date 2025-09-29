@@ -1,0 +1,16 @@
+{
+  "id": "social_publisher_20250925_083503_322559",
+  "type": "generate_instant_post",
+  "priority": 10,
+  "data": {
+    "platform": "Instagram",
+    "topic": "Technologie NFC iFiveMe",
+    "urgent": true
+  },
+  "created_at": "2025-09-25 08:35:03.322599",
+  "status": "completed",
+  "result": {
+    "error": "Génération échouée: 'GoogleDriveAgent' object has no attribute 'get_image_for_post'"
+  },
+  "error": null
+}
