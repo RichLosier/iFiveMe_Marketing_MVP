@@ -1,0 +1,28 @@
+{
+  "id": "approval_workflow_20250924_211419_207620",
+  "type": "submit_for_approval",
+  "priority": 8,
+  "data": {
+    "title": "Post LinkedIn - Révolutionnez votre networking",
+    "content": "🚀 Révolutionnez votre networking avec iFiveMe !\n\nLes cartes d'affaires traditionnelles, c'est du passé. Avec iFiveMe, créez des cartes virtuelles professionnelles qui :\n\n✅ Se partagent instantanément\n✅ Incluent analytics détaillées\n✅ S'intègrent à votre CRM\n✅ Respectent l'environnement\n\nPlus de 10,000 entrepreneurs font déjà confiance à iFiveMe pour leur networking digital.\n\n👉 Créez votre carte gratuite : ifiveme.com\n\n#Networking #CartesVirtuelles #iFiveMe #Innovation #Quebec",
+    "platform": "LinkedIn",
+    "created_by": "Marie Dubois - Marketing",
+    "scheduled_time": "2024-09-25T10:00:00"
+  },
+  "created_at": "2025-09-24 21:14:19.207636",
+  "status": "completed",
+  "result": {
+    "post_id": "7ac7c7ed-25b3-43d6-af70-5c5a0e6b1320",
+    "approval_token": "1349f519-5a63-46a7-b6f1-5004f4d1ed81",
+    "status": "submitted_for_approval",
+    "approval_email_sent": true,
+    "expires_at": "2025-09-25T21:14:19.207894",
+    "approval_urls": {
+      "approve": "https://approve.ifiveme.com/approve/7ac7c7ed-25b3-43d6-af70-5c5a0e6b1320/1349f519-5a63-46a7-b6f1-5004f4d1ed81",
+      "reject": "https://approve.ifiveme.com/reject/7ac7c7ed-25b3-43d6-af70-5c5a0e6b1320/1349f519-5a63-46a7-b6f1-5004f4d1ed81",
+      "edit": "https://approve.ifiveme.com/edit/7ac7c7ed-25b3-43d6-af70-5c5a0e6b1320/1349f519-5a63-46a7-b6f1-5004f4d1ed81"
+    },
+    "notification_sent_to": "richard@ifiveme.com"
+  },
+  "error": null
+}
