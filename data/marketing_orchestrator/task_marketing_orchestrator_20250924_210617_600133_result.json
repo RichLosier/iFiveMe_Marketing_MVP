@@ -1,0 +1,111 @@
+{
+  "id": "marketing_orchestrator_20250924_210617_600133",
+  "type": "create_campaign",
+  "priority": 9,
+  "data": {
+    "type": "product_launch",
+    "name": "Test Lancement iFiveMe 2.0",
+    "budget": 3000.0,
+    "channels": [
+      "social_media",
+      "email"
+    ],
+    "objectives": [
+      "Tester le système",
+      "Valider l'intégration"
+    ]
+  },
+  "created_at": "2025-09-24 21:06:17.600144",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "campaign_id": "campaign_45e0970f",
+    "campaign": {
+      "id": "campaign_45e0970f",
+      "name": "Test Lancement iFiveMe 2.0",
+      "type": "CampaignType.PRODUCT_LAUNCH",
+      "status": "CampaignStatus.DRAFT",
+      "description": "Campagne de lancement pour nouvelles fonctionnalités",
+      "target_audience": {
+        "demographics": {
+          "age_range": [
+            25,
+            55
+          ],
+          "locations": [
+            "Canada",
+            "USA",
+            "France"
+          ],
+          "languages": [
+            "fr",
+            "en"
+          ]
+        },
+        "interests": [
+          "networking",
+          "business_development",
+          "digital_tools",
+          "entrepreneurship",
+          "professional_services"
+        ],
+        "behaviors": [
+          "business_networking",
+          "digital_adoption",
+          "professional_development"
+        ]
+      },
+      "channels": [
+        "social_media",
+        "email"
+      ],
+      "budget": 3000.0,
+      "allocated_budget": {
+        "social_media": 1200.0,
+        "email": 900.0
+      },
+      "start_date": "2025-09-24 21:06:17.600227",
+      "end_date": "2025-10-24 21:06:17.600230",
+      "objectives": [
+        "Tester le système",
+        "Valider l'intégration"
+      ],
+      "kpis": {
+        "target_roi": 3.0,
+        "target_conversion_rate": 0.05,
+        "target_cpa": 20.0,
+        "target_reach": 10000,
+        "target_engagement_rate": 0.08
+      },
+      "content_plan": {
+        "themes": [
+          "Innovation iFiveMe",
+          "Networking Digital",
+          "Témoignages Clients",
+          "Conseils Business"
+        ],
+        "content_calendar": {},
+        "asset_requirements": {},
+        "approval_workflow": [
+          "content_creator",
+          "orchestrator",
+          "final_approval"
+        ]
+      },
+      "automation_rules": [],
+      "created_at": "2025-09-24 21:06:17.600237",
+      "created_by": "orchestrator",
+      "priority": 5,
+      "tags": [],
+      "ab_tests": [],
+      "performance_data": {},
+      "notes": ""
+    },
+    "channel_tasks": {
+      "social_media": [],
+      "email": []
+    },
+    "message": "Campagne 'Test Lancement iFiveMe 2.0' créée avec succès"
+  },
+  "error": null
+}
