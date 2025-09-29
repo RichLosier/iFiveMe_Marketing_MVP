@@ -1,0 +1,28 @@
+{
+  "id": "approval_workflow_20250924_212714_826456",
+  "type": "submit_for_approval",
+  "priority": 8,
+  "data": {
+    "title": "Post Facebook - Innovation Québécoise iFiveMe",
+    "content": "🚀 Innovation Québécoise : iFiveMe redéfinit l'excellence du networking !\n\n🇨🇦 Fiers d'être une entreprise québécoise qui révolutionne le monde professionnel !\n\nChez iFiveMe, nous créons bien plus que des cartes d'affaires virtuelles. Nous architecturons l'avenir des relations d'affaires avec une vision 100% québécoise et une ambition mondiale.\n\n🌟 **Pourquoi les entrepreneurs québécois nous choisissent :**\n\n✅ Innovation technologique de pointe made in Quebec\n✅ Networking intelligent qui booste vraiment vos affaires\n✅ Design premium qui reflète votre excellence professionnelle\n✅ Analytics avancées pour mesurer votre ROI relationnel\n✅ Intégration parfaite dans l'écosystème business québécois\n\n💡 **Notre mission :** Faire du Québec la référence mondiale du networking digital intelligent.\n\n🚀 **Résultats concrets chez nos clients québécois :**\n• +280% d'efficacité networking moyenne\n• 89% de mémorisation de marque après interaction\n• ROI moyen de 1:8 sur les investissements relationnels\n\nDe Montréal à Québec, de Gatineau à Sherbrooke, les leaders québécois transforment déjà leur networking avec iFiveMe.\n\nPrêt à rejoindre l'excellence québécoise du networking digital ?\n\n👉 Découvrez l'innovation iFiveMe : iFiveMe.com\n\n🇨🇦 Fier d'être québécois. Déterminé à être mondial.\n\n#iFiveMe #InnovationQuébécoise #NetworkingDigital #EntrepreneuriatQuébec #TechQuébec #BusinessInnovation #CartesDaffairesVirtuelles #StartupMontréal #Quebec #Innovation #Networking #Excellence",
+    "platform": "Facebook",
+    "created_by": "Marie-Claude Dubois - Content Strategist",
+    "scheduled_time": "2024-09-25T14:00:00"
+  },
+  "created_at": "2025-09-24 21:27:14.826488",
+  "status": "completed",
+  "result": {
+    "post_id": "928215d8-5e5a-4082-8a7e-30370e265d87",
+    "approval_token": "fbbd80c2-8a03-473d-8cbe-12a5e90332e7",
+    "status": "submitted_for_approval",
+    "approval_email_sent": true,
+    "expires_at": "2025-09-25T21:27:14.827286",
+    "approval_urls": {
+      "approve": "https://approve.ifiveme.com/approve/928215d8-5e5a-4082-8a7e-30370e265d87/fbbd80c2-8a03-473d-8cbe-12a5e90332e7",
+      "reject": "https://approve.ifiveme.com/reject/928215d8-5e5a-4082-8a7e-30370e265d87/fbbd80c2-8a03-473d-8cbe-12a5e90332e7",
+      "edit": "https://approve.ifiveme.com/edit/928215d8-5e5a-4082-8a7e-30370e265d87/fbbd80c2-8a03-473d-8cbe-12a5e90332e7"
+    },
+    "notification_sent_to": "richard@ifiveme.com"
+  },
+  "error": null
+}
