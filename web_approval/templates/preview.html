@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prévisualisation - iFiveMe</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px 12px 0 0;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .meta-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .meta-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .meta-label {
+            font-weight: bold;
+            color: #495057;
+        }
+
+        .meta-value {
+            color: #6c757d;
+        }
+
+        .platform-badge {
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .preview-section {
+            padding: 2rem;
+        }
+
+        .preview-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .post-preview {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+        .post-preview::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px 12px 0 0;
+        }
+
+        .post-content {
+            white-space: pre-wrap;
+            line-height: 1.6;
+            font-size: 1rem;
+            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        .platform-preview {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+        }
+
+        .platform-linkedin {
+            border-left: 4px solid #0077b5;
+        }
+
+        .platform-facebook {
+            border-left: 4px solid #1877f2;
+        }
+
+        .platform-twitter {
+            border-left: 4px solid #1da1f2;
+        }
+
+        .platform-instagram {
+            border-left: 4px solid #e4405f;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            padding: 2rem;
+            background: #f8f9fa;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-approve {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-approve:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-reject {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-reject:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+
+        .btn-back {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-back:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .stats-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-top: 0.25rem;
+        }
+
+        @media (max-width: 768px) {
+            .actions {
+                flex-direction: column;
+            }
+
+            .meta-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>👀 Prévisualisation du Post</h1>
+            <p>Aperçu avant approbation</p>
+        </div>
+
+        <div class="content-card">
+            <div class="meta-section">
+                <div class="meta-grid">
+                    <div class="meta-item">
+                        <span class="meta-label">📱 Plateforme:</span>
+                        <span class="platform-badge">{{ post[3] }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">👤 Créé par:</span>
+                        <span class="meta-value">{{ post[4] }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">📅 Date création:</span>
+                        <span class="meta-value">{{ post[5] }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">🚀 Publication:</span>
+                        <span class="meta-value">{{ post[6] or 'Non programmée' }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">📊 Statut:</span>
+                        <span class="status-badge status-{{ post[7] }}">{{ post[7]|title }}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">⏰ Expire:</span>
+                        <span class="meta-value">{{ post[12] }}</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="preview-section">
+                <div class="preview-title">
+                    📝 {{ post[1] }}
+                </div>
+
+                <div class="post-preview">
+                    <div class="post-content">{{ post[2] }}</div>
+
+                    <div class="platform-preview platform-{{ post[3].lower() }}">
+                        <strong>Aperçu {{ post[3] }}:</strong>
+                        <div style="margin-top: 0.5rem; font-style: italic; color: #666;">
+                            {% if post[3].lower() == 'linkedin' %}
+                                Ce post apparaîtra dans le feed LinkedIn professionnel
+                            {% elif post[3].lower() == 'facebook' %}
+                                Ce post sera publié sur la page Facebook iFiveMe
+                            {% elif post[3].lower() == 'twitter' %}
+                                Ce tweet sera publié sur le compte Twitter iFiveMe
+                            {% elif post[3].lower() == 'instagram' %}
+                                Ce post apparaîtra sur le feed Instagram iFiveMe
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Statistiques prévisionnelles -->
+                <div class="stats-preview">
+                    <div class="stat-item">
+                        <div class="stat-number">{{ (post[2]|length / 5)|round|int }}</div>
+                        <div class="stat-label">Portée estimée</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">{{ ((post[2]|length / 10) * 0.03)|round(1) }}%</div>
+                        <div class="stat-label">Engagement prévu</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">{{ post[2].split()|length }}</div>
+                        <div class="stat-label">Mots</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">{{ post[2].count('#') }}</div>
+                        <div class="stat-label">Hashtags</div>
+                    </div>
+                </div>
+            </div>
+
+            {% if post[7] == 'pending' %}
+            <div class="actions">
+                <a href="{{ url_for('approve_post', post_id=post[0], token=post[8]) }}"
+                   class="btn btn-approve"
+                   onclick="return confirm('Approuver ce post ?')">
+                    ✅ Approuver
+                </a>
+                <a href="{{ url_for('reject_post', post_id=post[0], token=post[8]) }}"
+                   class="btn btn-reject">
+                    ❌ Rejeter
+                </a>
+                <a href="{{ url_for('dashboard') }}" class="btn btn-back">
+                    ↩️ Retour
+                </a>
+            </div>
+            {% else %}
+            <div class="actions">
+                <a href="{{ url_for('dashboard') }}" class="btn btn-back">
+                    ↩️ Retour au Dashboard
+                </a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</body>
+</html>
