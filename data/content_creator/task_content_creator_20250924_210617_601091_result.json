@@ -1,0 +1,26 @@
+{
+  "id": "content_creator_20250924_210617_601091",
+  "type": "create_email_content",
+  "priority": 7,
+  "data": {
+    "type": "welcome",
+    "user_name": "Nouvel utilisateur iFiveMe"
+  },
+  "created_at": "2025-09-24 21:06:17.601096",
+  "status": "completed",
+  "result": {
+    "type": "welcome",
+    "subject": "Bienvenue chez iFiveMe ! Créez votre première carte 🚀",
+    "content": "Objet : Bienvenue dans l'avenir du networking ! 🚀\n\nBonjour [Prénom],\n\nFélicitations ! Vous venez de rejoindre iFiveMe, la plateforme qui révolutionne les cartes d'affaires.\n\nVoici ce que vous pouvez faire dès maintenant :\n\n🎯 Créer votre première carte virtuelle en 3 minutes\n📊 Suivre vos interactions en temps réel\n🔗 Intégrer vos réseaux sociaux et portfolio\n📈 Analyser l'efficacité de votre networking\n\nPour commencer, cliquez simplement sur \"Créer ma carte\" dans votre tableau de bord.\n\nBesoin d'aide ? Notre équipe support est là pour vous : support@ifiveme.com\n\nExcellente journée,\nL'équipe iFiveMe\n\nP.S. : Suivez nos conseils networking sur LinkedIn @iFiveMe",
+    "personalization_fields": [
+      "user_name",
+      "company"
+    ],
+    "cta_buttons": [
+      "Créer ma carte"
+    ],
+    "estimated_open_rate": 45.0,
+    "estimated_click_rate": 12.0
+  },
+  "error": null
+}
