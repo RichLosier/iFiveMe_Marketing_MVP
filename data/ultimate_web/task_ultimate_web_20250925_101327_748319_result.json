@@ -1,0 +1,29 @@
+{
+  "id": "ultimate_web_20250925_101327_748319",
+  "type": "free_mode_execution",
+  "priority": 10,
+  "data": {
+    "instruction": "Va sur Google et recherche iFiveMe cartes virtuelles",
+    "url": "https://www.google.com",
+    "options": {}
+  },
+  "created_at": "2025-09-25 10:13:27.748333",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "instruction": "Va sur Google et recherche iFiveMe cartes virtuelles",
+    "plan_executed": [
+      {
+        "action": "generic",
+        "instruction": "Va sur Google et recherche iFiveMe cartes virtuelles"
+      }
+    ],
+    "results": [
+      {
+        "error": "Action inconnue: generic"
+      }
+    ],
+    "screenshot": "data/ultimate_web/free_mode_result.png"
+  },
+  "error": null
+}
