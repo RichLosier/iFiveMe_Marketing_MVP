@@ -1,0 +1,42 @@
+# iFiveMe Marketing MVP - Requirements
+# Core web framework
+Flask==3.0.3
+Flask-SocketIO==5.3.6
+Flask-Cors==4.0.1
+python-dotenv==1.0.1
+gunicorn==22.0.0
+
+# Web automation
+playwright>=1.40.0
+asyncio
+
+# Data processing
+requests>=2.31.0
+aiohttp>=3.8.0
+
+# Google Drive integration
+google-api-python-client>=2.0.0
+google-auth>=2.0.0
+google-auth-oauthlib>=1.0.0
+
+# AI and language processing
+openai>=1.0.0
+anthropic>=0.3.0
+
+# Database and storage
+sqlite3
+
+# Utilities
+pathlib
+json5
+pydantic>=2.0.0
+tenacity>=8.0.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# Optional: Advanced features
+# firecrawl-py  # Requires API key
+# langchain>=0.1.0
+# chromadb>=0.4.0
