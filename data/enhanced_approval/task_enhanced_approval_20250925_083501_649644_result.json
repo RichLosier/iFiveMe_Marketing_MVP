@@ -1,0 +1,26 @@
+{
+  "id": "enhanced_approval_20250925_083501_649644",
+  "type": "submit_for_web_approval",
+  "priority": 8,
+  "data": {
+    "title": "💼 L'Évolution du Networking Professionnel: Fini les Cartes Perdues",
+    "content": "💼 Réflexion du jour : 67% des cartes d'affaires reçues sont perdues en moins de 7 jours.\n\n🎯 **Le paradoxe moderne :**\nPlus nous multiplions les interactions, moins nous créons de vraies connexions durables.\n\n📈 **Notre solution iFiveMe :**\n• Cartes d'affaires virtuelles NFC intelligentes\n• Partage instantané par simple contact\n• Suivi automatisé des interactions\n• Intégration CRM native\n• Analytics comportementaux en temps réel\n\n📊 **Impact mesuré chez nos clients B2B :**\n• +340% d'efficacité dans la capture de leads\n• 89% de taux de récupération des contacts\n• ROI moyen 4:1 sur investissement networking\n• 2.5h/semaine économisées par commercial\n\n💡 **L'innovation qui fait la différence :**\nNotre technologie NFC couplée à l'intelligence data transforme chaque interaction en opportunité business mesurable.\n\n🌍 **Bonus écologique :** Zéro papier gaspillé, impact carbone réduit de 78%\n\n**Question à ma communauté :** Comment mesurez-vous actuellement l'efficacité de votre networking ?\n\n#Networking #DigitalTransformation #B2B #iFiveMe #CartesVirtuelles #NFC #BusinessDevelopment",
+    "platform": "LinkedIn",
+    "created_by": "Richard Losier - CEO iFiveMe",
+    "scheduled_time": "2024-09-26T09:00:00"
+  },
+  "created_at": "2025-09-25 08:35:01.649666",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "post_id": "7fbe9265-edc5-4dcf-9341-32ad544970c5",
+    "approval_token": "c07fdc50-4954-4f39-9b7c-8dc2f6d10cd9",
+    "web_dashboard_url": "https://9b02f713b297.ngrok-free.app/",
+    "direct_approval_url": "https://9b02f713b297.ngrok-free.app/approve/7fbe9265-edc5-4dcf-9341-32ad544970c5/c07fdc50-4954-4f39-9b7c-8dc2f6d10cd9",
+    "direct_rejection_url": "https://9b02f713b297.ngrok-free.app/reject/7fbe9265-edc5-4dcf-9341-32ad544970c5/c07fdc50-4954-4f39-9b7c-8dc2f6d10cd9",
+    "preview_url": "https://9b02f713b297.ngrok-free.app/preview/7fbe9265-edc5-4dcf-9341-32ad544970c5/c07fdc50-4954-4f39-9b7c-8dc2f6d10cd9",
+    "expires_at": "2025-09-26T08:35:02.947503",
+    "status": "pending_web_approval"
+  },
+  "error": null
+}
