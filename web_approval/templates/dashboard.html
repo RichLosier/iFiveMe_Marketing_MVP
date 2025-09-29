@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iFiveMe - Dashboard Approbations</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .section {
+            background: white;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1rem 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .post-card {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+            transition: background-color 0.3s;
+        }
+
+        .post-card:hover {
+            background-color: #f8f9fa;
+        }
+
+        .post-card:last-child {
+            border-bottom: none;
+        }
+
+        .post-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .post-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .post-platform {
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .post-meta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .post-content {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            font-style: italic;
+            max-height: 100px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .post-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-approve {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-approve:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-reject {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-reject:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+
+        .btn-preview {
+            background: #17a2b8;
+            color: white;
+        }
+
+        .btn-preview:hover {
+            background: #138496;
+            transform: translateY(-2px);
+        }
+
+        .quick-action-btn {
+            padding: 0.75rem 1.5rem;
+            background: #28a745;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .quick-action-btn:hover {
+            background: #218838;
+            transform: translateY(-2px);
+            color: white;
+            text-decoration: none;
+        }
+
+        .quick-action-btn.secondary {
+            background: #6c757d;
+        }
+
+        .quick-action-btn.secondary:hover {
+            background: #5a6268;
+        }
+
+        .btn-publish {
+            background: #fd7e14;
+            color: white;
+        }
+
+        .btn-publish:hover {
+            background: #e16614;
+            transform: translateY(-2px);
+        }
+
+        .status {
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .status-approved {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-rejected {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 3rem;
+            color: #666;
+        }
+
+        .empty-state h3 {
+            margin-bottom: 1rem;
+        }
+
+        .flash-messages {
+            margin-bottom: 1rem;
+        }
+
+        .flash {
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .flash.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .flash.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .flash.warning {
+            background: #fff3cd;
+            color: #856404;
+            border: 1px solid #ffeaa7;
+        }
+
+        @media (max-width: 768px) {
+            .post-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .post-actions {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 iFiveMe Dashboard</h1>
+        <p>Système d'Approbation Marketing</p>
+
+        <!-- Actions rapides -->
+        <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="{{ url_for('generate_instant_post') }}" class="quick-action-btn">
+                ⚡ Générer Post Instantané
+            </a>
+            <a href="{{ url_for('setup_social_platforms') }}" class="quick-action-btn secondary">
+                🔧 Configurer APIs Sociales
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Messages flash -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-messages">
+                    {% for category, message in messages %}
+                        <div class="flash {{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <!-- Statistiques -->
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number">{{ pending_posts|length }}</div>
+                <div class="stat-label">En attente</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">{{ recent_posts|selectattr('10', 'eq', 'approved')|list|length }}</div>
+                <div class="stat-label">Approuvés</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">{{ recent_posts|selectattr('10', 'eq', 'rejected')|list|length }}</div>
+                <div class="stat-label">Rejetés</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">{{ (pending_posts|length + recent_posts|length) }}</div>
+                <div class="stat-label">Total</div>
+            </div>
+        </div>
+
+        <!-- Posts en attente d'approbation -->
+        <div class="section">
+            <div class="section-header">
+                📋 Posts en attente d'approbation ({{ pending_posts|length }})
+            </div>
+
+            {% if pending_posts %}
+                {% for post in pending_posts %}
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="post-title">{{ post[1] }}</div>
+                        <div class="post-platform">{{ post[3] }}</div>
+                    </div>
+
+                    <div class="post-meta">
+                        <div><strong>👤 Créé par:</strong> {{ post[4] }}</div>
+                        <div><strong>📅 Créé le:</strong> {{ post[5] }}</div>
+                        <div><strong>⏰ Publication:</strong> {{ post[6] or 'Non programmée' }}</div>
+                        <div><strong>⏳ Expire le:</strong> {{ post[12] }}</div>
+                    </div>
+
+                    <div class="post-content">
+                        {{ post[2][:200] }}{% if post[2]|length > 200 %}...{% endif %}
+                    </div>
+
+                    <div class="post-actions">
+                        <a href="{{ url_for('approve_post', post_id=post[0], token=post[8]) }}"
+                           class="btn btn-approve"
+                           onclick="return confirm('Êtes-vous sûr de vouloir approuver ce post ?')">
+                            ✅ Approuver
+                        </a>
+                        <a href="{{ url_for('reject_post', post_id=post[0], token=post[8]) }}"
+                           class="btn btn-reject">
+                            ❌ Rejeter
+                        </a>
+                        <a href="{{ url_for('preview_post', post_id=post[0], token=post[8]) }}"
+                           class="btn btn-preview">
+                            👀 Prévisualiser
+                        </a>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <h3>🎉 Aucun post en attente</h3>
+                    <p>Tous vos posts sont traités !</p>
+                </div>
+            {% endif %}
+        </div>
+
+        <!-- Historique récent -->
+        <div class="section">
+            <div class="section-header">
+                📊 Historique récent ({{ recent_posts|length }})
+            </div>
+
+            {% if recent_posts %}
+                {% for post in recent_posts %}
+                <div class="post-card">
+                    <div class="post-header">
+                        <div class="post-title">{{ post[1] }}</div>
+                        <div>
+                            <span class="post-platform">{{ post[3] }}</span>
+                            <span class="status status-{{ post[7] }}">{{ post[7]|title }}</span>
+                        </div>
+                    </div>
+
+                    <div class="post-meta">
+                        <div><strong>👤 Créé par:</strong> {{ post[4] }}</div>
+                        <div><strong>📅 Créé le:</strong> {{ post[5] }}</div>
+                        {% if post[7] == 'approved' %}
+                            <div><strong>✅ Approuvé le:</strong> {{ post[9] }}</div>
+                            <div><strong>👨‍💼 Approuvé par:</strong> {{ post[10] }}</div>
+                        {% elif post[7] == 'rejected' %}
+                            <div><strong>❌ Raison:</strong> {{ post[11] or 'Aucune raison spécifiée' }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="post-content">
+                        {{ post[2][:150] }}{% if post[2]|length > 150 %}...{% endif %}
+                    </div>
+
+                    {% if post[7] == 'approved' %}
+                    <div class="post-actions">
+                        <a href="{{ url_for('publish_approved', post_id=post[0]) }}"
+                           class="btn btn-publish"
+                           onclick="return confirm('Publier ce post sur {{ post[3] }} maintenant ?')">
+                            🚀 Publier sur {{ post[3] }}
+                        </a>
+                        <a href="{{ url_for('preview_post', post_id=post[0], token=post[8]) }}"
+                           class="btn btn-preview" target="_blank">
+                            👀 Prévisualiser
+                        </a>
+                    </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="empty-state">
+                    <h3>📝 Aucun historique</h3>
+                    <p>L'historique des approbations apparaîtra ici</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script>
+        // Auto-refresh every 30 seconds
+        setTimeout(function() {
+            location.reload();
+        }, 30000);
+
+        // Add some interactivity
+        document.addEventListener('DOMContentLoaded', function() {
+            // Show confirmation before approving
+            const approveButtons = document.querySelectorAll('.btn-approve');
+            approveButtons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    if (!confirm('Êtes-vous sûr de vouloir approuver ce post ?')) {
+                        e.preventDefault();
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
