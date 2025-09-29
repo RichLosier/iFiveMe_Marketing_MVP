@@ -1,0 +1,26 @@
+{
+  "id": "enhanced_approval_20250924_222312_214727",
+  "type": "submit_for_web_approval",
+  "priority": 8,
+  "data": {
+    "title": "🔥 TWITTER: Annonce Innovation iFiveMe 3.0",
+    "content": "🔥 BREAKING : iFiveMe 3.0 avec IA prédictive est LIVE ! 🇨🇦\n\n🎯 Les highlights qui changent tout :\n• Scoring compatibilité business 94% précis\n• +340% d'efficacité networking prouvée\n• ROI 1:12 chez clients Fortune 500\n• Made in Quebec avec fierté ! 🍁\n\nLes 500 premiers → 50% OFF Premium\n\nLa révolution commence maintenant 🚀\n\niFiveMe.com/v3\n\n#iFiveMe #NetworkingAI #Quebec #Innovation #TechMontreal #StartupCanada",
+    "platform": "Twitter",
+    "created_by": "Équipe Marketing iFiveMe",
+    "scheduled_time": "2024-09-25T19:00:00"
+  },
+  "created_at": "2025-09-24 22:23:12.214744",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "post_id": "6f08a0c2-b3a8-42c6-9c5c-c4cc370ef8a3",
+    "approval_token": "5510542b-2663-4ae9-a67f-db15e266ec5a",
+    "web_dashboard_url": "https://9b02f713b297.ngrok-free.app/",
+    "direct_approval_url": "https://9b02f713b297.ngrok-free.app/approve/6f08a0c2-b3a8-42c6-9c5c-c4cc370ef8a3/5510542b-2663-4ae9-a67f-db15e266ec5a",
+    "direct_rejection_url": "https://9b02f713b297.ngrok-free.app/reject/6f08a0c2-b3a8-42c6-9c5c-c4cc370ef8a3/5510542b-2663-4ae9-a67f-db15e266ec5a",
+    "preview_url": "https://9b02f713b297.ngrok-free.app/preview/6f08a0c2-b3a8-42c6-9c5c-c4cc370ef8a3/5510542b-2663-4ae9-a67f-db15e266ec5a",
+    "expires_at": "2025-09-25T22:23:12.411387",
+    "status": "pending_web_approval"
+  },
+  "error": null
+}
