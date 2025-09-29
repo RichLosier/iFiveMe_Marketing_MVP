@@ -1,0 +1,26 @@
+{
+  "id": "enhanced_approval_20250924_222311_982185",
+  "type": "submit_for_web_approval",
+  "priority": 8,
+  "data": {
+    "title": "🎯 LINKEDIN: Leadership iFiveMe & Vision 2024",
+    "content": "💼 Leadership Québécois & Vision Innovation 2024\n\n🇨🇦 **Réflexion stratégique du jour :** Comment iFiveMe redéfinit l'excellence relationnelle\n\nEn tant que leaders de l'innovation networking au Québec, nous observons une transformation fondamentale des interactions business.\n\n🎯 **Notre approche révolutionnaire :**\n\n✓ **IA Prédictive de Compatibilité** - 94% de précision mesurée\n✓ **ROI Relationnel Mesurable** - 1:15 chez nos clients Fortune 500\n✓ **Orchestration Multi-canal** - 3x plus d'opportunités générées\n✓ **Analytics Comportementales** - Insights temps réel\n\n📊 **Impact mesuré :**\n• +450% d'efficacité networking\n• 96% de mémorisation post-interaction\n• Intégration réussie dans 92% des écosystèmes enterprise\n\n🌟 **La différence iFiveMe :** Nous ne vendons pas un outil. Nous certifions votre excellence relationnelle.\n\n**Question aux leaders :** Comment mesurez-vous actuellement le ROI de votre networking ?\n\n🚀 **Vision 2025 :** Faire du Québec la référence mondiale du networking intelligent.\n\n#LeadershipDigital #iFiveMe #InnovationQuébécoise #NetworkingIA #BusinessExcellence #Quebec #Leadership",
+    "platform": "LinkedIn",
+    "created_by": "Richard Losier - CEO iFiveMe",
+    "scheduled_time": "2024-09-26T09:00:00"
+  },
+  "created_at": "2025-09-24 22:23:11.982206",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "post_id": "ed9b1b20-f3ad-44c1-acd7-4ec4e9e82718",
+    "approval_token": "5621797e-4b35-4c33-8806-3ebd20ce96c0",
+    "web_dashboard_url": "https://9b02f713b297.ngrok-free.app/",
+    "direct_approval_url": "https://9b02f713b297.ngrok-free.app/approve/ed9b1b20-f3ad-44c1-acd7-4ec4e9e82718/5621797e-4b35-4c33-8806-3ebd20ce96c0",
+    "direct_rejection_url": "https://9b02f713b297.ngrok-free.app/reject/ed9b1b20-f3ad-44c1-acd7-4ec4e9e82718/5621797e-4b35-4c33-8806-3ebd20ce96c0",
+    "preview_url": "https://9b02f713b297.ngrok-free.app/preview/ed9b1b20-f3ad-44c1-acd7-4ec4e9e82718/5621797e-4b35-4c33-8806-3ebd20ce96c0",
+    "expires_at": "2025-09-25T22:23:12.213129",
+    "status": "pending_web_approval"
+  },
+  "error": null
+}
