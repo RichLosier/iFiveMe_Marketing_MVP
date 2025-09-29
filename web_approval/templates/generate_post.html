@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Génération Instantanée - iFiveMe</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            max-width: 600px;
+            width: 90%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .content {
+            padding: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        select:focus, input:focus, textarea:focus {
+            outline: none;
+            border-color: #28a745;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-generate {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-generate:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-cancel {
+            background: #6c757d;
+            color: white;
+        }
+
+        .btn-cancel:hover {
+            background: #5a6268;
+            transform: translateY(-2px);
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .feature {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #28a745;
+        }
+
+        .feature h3 {
+            color: #28a745;
+            margin-bottom: 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .actions {
+                flex-direction: column;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚡ Génération Post Instantané</h1>
+            <p>IA + Expertise iFiveMe = Contenu d'excellence</p>
+        </div>
+
+        <div class="content">
+            <div class="info-box">
+                🤖 <strong>Intelligence Artificielle Avancée</strong><br>
+                Notre système va analyser votre demande, appliquer les standards iFiveMe, et créer un post professionnel avec image automatique depuis votre Google Drive.
+            </div>
+
+            <div class="features">
+                <div class="feature">
+                    <h3>🎯 Qualité Expert</h3>
+                    <p>Boucle qualité 93%+ garantie</p>
+                </div>
+                <div class="feature">
+                    <h3>🖼️ Image Auto</h3>
+                    <p>Sélection intelligente Google Drive</p>
+                </div>
+                <div class="feature">
+                    <h3>🇨🇦 Ton iFiveMe</h3>
+                    <p>Style professionnel québécois</p>
+                </div>
+            </div>
+
+            <form method="POST">
+                <div class="form-group">
+                    <label for="platform">📱 Plateforme de publication *</label>
+                    <select name="platform" id="platform" required>
+                        <option value="">-- Choisir la plateforme --</option>
+                        <option value="Facebook">🔵 Facebook - Page iFiveMe</option>
+                        <option value="LinkedIn">💼 LinkedIn - Profil professionnel</option>
+                        <option value="Twitter">🐦 Twitter - Compte iFiveMe</option>
+                        <option value="Instagram">📸 Instagram - Visual storytelling</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="topic">💡 Sujet ou thème (optionnel)</label>
+                    <input type="text"
+                           name="topic"
+                           id="topic"
+                           placeholder="Ex: Nouvelle fonctionnalité, Success story, Innovation IA..."
+                           value="Innovation iFiveMe">
+                </div>
+
+                <div class="form-group">
+                    <label for="details">📝 Détails supplémentaires (optionnel)</label>
+                    <textarea name="details"
+                              id="details"
+                              placeholder="Informations spécifiques à inclure, événement particulier, chiffres à mentionner..."></textarea>
+                </div>
+
+                <div class="actions">
+                    <button type="submit" class="btn btn-generate">
+                        ⚡ Générer & Soumettre pour Approbation
+                    </button>
+                    <a href="{{ url_for('dashboard') }}" class="btn btn-cancel">
+                        ↩️ Retour au Dashboard
+                    </a>
+                </div>
+            </form>
+
+            <div style="margin-top: 2rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; font-size: 0.9rem; color: #666;">
+                <strong>🔄 Processus automatique :</strong><br>
+                1. 🤖 L'IA génère le contenu expert<br>
+                2. 🖼️ Sélection automatique d'image pertinente<br>
+                3. ✅ Soumission pour votre approbation<br>
+                4. 📱 Notification sur ce dashboard<br>
+                5. 🚀 Publication après approbation
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('platform').focus();
+
+        // Auto-suggestions par plateforme
+        const platformSuggestions = {
+            'Facebook': 'Lancement produit iFiveMe',
+            'LinkedIn': 'Leadership et vision entrepreneuriale',
+            'Twitter': 'Innovation networking IA',
+            'Instagram': 'Coulisses équipe iFiveMe'
+        };
+
+        document.getElementById('platform').addEventListener('change', function() {
+            const topic = document.getElementById('topic');
+            if (this.value && !topic.value.trim()) {
+                topic.value = platformSuggestions[this.value] || 'Innovation iFiveMe';
+            }
+        });
+    </script>
+</body>
+</html>
