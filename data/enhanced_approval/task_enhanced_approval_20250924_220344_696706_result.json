@@ -1,0 +1,26 @@
+{
+  "id": "enhanced_approval_20250924_220344_696706",
+  "type": "submit_for_web_approval",
+  "priority": 8,
+  "data": {
+    "title": "🚀 DEMO: iFiveMe 3.0 - Innovation Québécoise",
+    "content": "🇨🇦 Fiers de révolutionner le networking depuis le Québec!\n\n✅ IA Prédictive pour contacts stratégiques\n✅ ROI 1:12 mesurés chez nos clients\n✅ Interface mobile-first\n\n#iFiveMe #Quebec #Innovation",
+    "platform": "Facebook",
+    "created_by": "Demo Team",
+    "scheduled_time": null
+  },
+  "created_at": "2025-09-24 22:03:44.696726",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "post_id": "f4c2c847-99a1-48ea-9682-dc3cb0f8f395",
+    "approval_token": "588de7d5-2172-40e1-9bd4-16dc19c247bb",
+    "web_dashboard_url": "http://localhost:8080/",
+    "direct_approval_url": "http://localhost:8080/approve/f4c2c847-99a1-48ea-9682-dc3cb0f8f395/588de7d5-2172-40e1-9bd4-16dc19c247bb",
+    "direct_rejection_url": "http://localhost:8080/reject/f4c2c847-99a1-48ea-9682-dc3cb0f8f395/588de7d5-2172-40e1-9bd4-16dc19c247bb",
+    "preview_url": "http://localhost:8080/preview/f4c2c847-99a1-48ea-9682-dc3cb0f8f395/588de7d5-2172-40e1-9bd4-16dc19c247bb",
+    "expires_at": "2025-09-25T22:03:44.697019",
+    "status": "pending_web_approval"
+  },
+  "error": null
+}
