@@ -1,0 +1,31 @@
+{
+  "id": "ultimate_web_20250925_101311_644758",
+  "type": "free_mode_execution",
+  "priority": 10,
+  "data": {
+    "instruction": "Prendre une capture d'écran de la page",
+    "url": "https://www.google.com",
+    "options": {
+      "headless": true
+    }
+  },
+  "created_at": "2025-09-25 10:13:11.644772",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "instruction": "Prendre une capture d'écran de la page",
+    "plan_executed": [
+      {
+        "action": "generic",
+        "instruction": "Prendre une capture d'écran de la page"
+      }
+    ],
+    "results": [
+      {
+        "error": "Action inconnue: generic"
+      }
+    ],
+    "screenshot": "data/ultimate_web/free_mode_result.png"
+  },
+  "error": null
+}
