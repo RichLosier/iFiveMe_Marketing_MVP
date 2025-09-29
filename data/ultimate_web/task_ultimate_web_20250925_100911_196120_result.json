@@ -1,0 +1,86 @@
+{
+  "id": "ultimate_web_20250925_100911_196120",
+  "type": "navigate_and_perform",
+  "priority": 10,
+  "data": {
+    "url": "https://www.facebook.com",
+    "actions": [
+      {
+        "type": "click",
+        "target": "text=Accepter tous les cookies",
+        "options": {
+          "optional": true
+        }
+      },
+      {
+        "type": "click",
+        "target": "[data-testid='search']",
+        "options": {
+          "retry": true
+        }
+      },
+      {
+        "type": "type",
+        "target": "input[placeholder*='Rechercher']",
+        "value": "iFiveMe",
+        "options": {
+          "clear": true
+        }
+      },
+      {
+        "type": "wait",
+        "target": "2000",
+        "options": {}
+      },
+      {
+        "type": "scroll",
+        "options": {
+          "direction": "down",
+          "pixels": 500,
+          "retry": false
+        }
+      },
+      {
+        "type": "extract",
+        "target": ".search-result",
+        "options": {
+          "count": 5,
+          "retry": false
+        }
+      }
+    ]
+  },
+  "created_at": "2025-09-25 10:09:11.196147",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "url": "https://www.facebook.com",
+    "actions_performed": 6,
+    "results": [
+      {
+        "error": "Clic échoué: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"text=Accepter tous les cookies\") to be visible\n"
+      },
+      {
+        "error": "Clic échoué: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"[data-testid='search']\") to be visible\n    - waiting for\" https://www.facebook.com/login/?privacy_mutation_token=eyJ0eXBlIjowLCJjcmVhdGlvbl90aW1lIjoxNzU4ODA5MzUyLCJjYWxsc2l0ZV9pZCI6MzgxMjI5MDc5NTc1OTQ2fQ%3D%3D&next\" navigation to finish...\n    - navigated to \"https://www.facebook.com/two_step_verification/two_factor/?encrypted_context=ARFoy-BIu1mkGrddR8EkbP49tPIw2yhcx_s8zQOKfr8Kq1Aa_NNAjJgRa0W-U3E3JlLHL9TtSLT8-0qtwnu7aEi9xFjVvG9xw_DxiRf3UMQKDHivBTiUWmqKDR…\"\n"
+      },
+      {
+        "error": "Frappe échouée: Page.wait_for_selector: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\"input[placeholder*='Rechercher']\") to be visible\n"
+      },
+      {
+        "error": "Action échouée: 'UltimateWebAgent' object has no attribute '_intelligent_wait'",
+        "action": "wait"
+      },
+      {
+        "error": "Action échouée: 'UltimateWebAgent' object has no attribute '_human_scroll'",
+        "action": "scroll"
+      },
+      {
+        "error": "Action échouée: 'UltimateWebAgent' object has no attribute '_extract_element_data'",
+        "action": "extract"
+      }
+    ],
+    "screenshot": "data/ultimate_web/final_result.png",
+    "session_id": "web_session_1758809351"
+  },
+  "error": null
+}
