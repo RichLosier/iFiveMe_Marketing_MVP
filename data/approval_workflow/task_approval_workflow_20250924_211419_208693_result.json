@@ -1,0 +1,25 @@
+{
+  "id": "approval_workflow_20250924_211419_208693",
+  "type": "get_pending_posts",
+  "priority": 5,
+  "data": {},
+  "created_at": "2025-09-24 21:14:19.208697",
+  "status": "completed",
+  "result": {
+    "summary": {
+      "total": 0,
+      "pending": 0,
+      "approved": 0,
+      "rejected": 0,
+      "expired": 0
+    },
+    "posts": {
+      "pending": [],
+      "approved": [],
+      "rejected": [],
+      "expired": []
+    },
+    "generated_at": "2025-09-24T21:14:19.208703"
+  },
+  "error": null
+}
