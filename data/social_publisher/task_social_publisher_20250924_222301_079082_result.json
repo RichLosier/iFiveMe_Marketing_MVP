@@ -1,0 +1,33 @@
+{
+  "id": "social_publisher_20250924_222301_079082",
+  "type": "get_facebook_page_analysis",
+  "priority": 9,
+  "data": {
+    "analyze_style": true
+  },
+  "created_at": "2025-09-24 22:23:01.079101",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "page_analysis": {
+      "brand_style": {
+        "tone": "Professionnel et innovant",
+        "language": "Français québécois",
+        "focus": "Networking et cartes d'affaires virtuelles",
+        "target": "Professionnels et entrepreneurs"
+      },
+      "content_patterns": [],
+      "visual_elements": [],
+      "posting_frequency": "",
+      "engagement_style": ""
+    },
+    "recommendations": [
+      "Maintenir le ton professionnel québécois",
+      "Utiliser émojis avec parcimonie",
+      "Focus sur innovation et ROI",
+      "Inclure toujours une image de qualité",
+      "Mentionner les avantages concrets"
+    ]
+  },
+  "error": null
+}
