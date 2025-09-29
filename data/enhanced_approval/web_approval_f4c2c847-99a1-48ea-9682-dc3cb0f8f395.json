@@ -1,0 +1,26 @@
+{
+  "post": {
+    "id": "f4c2c847-99a1-48ea-9682-dc3cb0f8f395",
+    "title": "🚀 DEMO: iFiveMe 3.0 - Innovation Québécoise",
+    "content": "🇨🇦 Fiers de révolutionner le networking depuis le Québec!\n\n✅ IA Prédictive pour contacts stratégiques\n✅ ROI 1:12 mesurés chez nos clients\n✅ Interface mobile-first\n\n#iFiveMe #Quebec #Innovation",
+    "platform": "Facebook",
+    "created_by": "Demo Team",
+    "created_at": "2025-09-24 22:03:44.696755",
+    "scheduled_time": null,
+    "status": "pending",
+    "approval_token": "588de7d5-2172-40e1-9bd4-16dc19c247bb",
+    "web_url": "http://localhost:8080/preview/f4c2c847-99a1-48ea-9682-dc3cb0f8f395/588de7d5-2172-40e1-9bd4-16dc19c247bb"
+  },
+  "urls": {
+    "dashboard": "http://localhost:8080/",
+    "preview": "http://localhost:8080/preview/f4c2c847-99a1-48ea-9682-dc3cb0f8f395/588de7d5-2172-40e1-9bd4-16dc19c247bb",
+    "approve": "http://localhost:8080/approve/f4c2c847-99a1-48ea-9682-dc3cb0f8f395/588de7d5-2172-40e1-9bd4-16dc19c247bb",
+    "reject": "http://localhost:8080/reject/f4c2c847-99a1-48ea-9682-dc3cb0f8f395/588de7d5-2172-40e1-9bd4-16dc19c247bb"
+  },
+  "instructions": [
+    "1. Ouvrez le dashboard dans votre navigateur",
+    "2. Cliquez sur Prévisualiser pour voir le post complet",
+    "3. Cliquez sur Approuver ou Rejeter",
+    "4. L'équipe sera automatiquement notifiée"
+  ]
+}
