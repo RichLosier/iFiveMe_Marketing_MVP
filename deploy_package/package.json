@@ -1,0 +1,16 @@
+{
+  "name": "ifiveme_marketing_mvp",
+  "version": "1.0.0",
+  "description": "**Système d'automatisation marketing complet avec subagents intelligents**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "playwright": "^1.55.1"
+  }
+}
