@@ -1,0 +1,1059 @@
+{
+  "analysis_timestamp": 1758811288.791796,
+  "analysis_duration": "comprehensive",
+  "site_info": {
+    "domain": "admin.ifiveme.com",
+    "login_success": true,
+    "authenticated_url": "https://admin.ifiveme.com/users",
+    "security_features": [
+      "CSRF Protection",
+      "2FA Support"
+    ]
+  },
+  "sections_analyzed": 15,
+  "comprehensive_structure": {
+    "https://admin.ifiveme.com/cards?user=1002": {
+      "url": "https://admin.ifiveme.com/cards?user=1002",
+      "timestamp": 1758811251.348497,
+      "title": "Cartes professionnelles » iFiveMe",
+      "content_type": "card_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=hAZF2iUdD4f-t2DGlyAcNDgmk1RpHSj2jdkLqd6Kuft-SdlldVyGtkZgtpgh7n5vzp4O8oeK1r_IBn2NhuM6tg"
+        },
+        {
+          "text": "←",
+          "href": null
+        },
+        {
+          "text": "1",
+          "href": null
+        },
+        {
+          "text": "→",
+          "href": null
+        }
+      ],
+      "data_tables": [
+        {
+          "index": 0,
+          "headers": [
+            "Nom sur la carte",
+            "Modèle de carte",
+            "URL de prévisualisation",
+            "URL",
+            "Contact",
+            "",
+            "https://alexinfinity.ifivem..."
+          ],
+          "total_rows": 2,
+          "sample_data": [
+            [
+              "Nom sur la carte",
+              "Modèle de carte",
+              "URL de prévisualisation",
+              "URL",
+              "Contact",
+              ""
+            ],
+            [
+              "Alexandre Belzil",
+              "fr",
+              "https://alexinfinity.ifivem...",
+              "fr",
+              "Alexandre",
+              ""
+            ]
+          ],
+          "data_type": "users",
+          "sortable": false,
+          "filterable": false,
+          "paginated": true
+        }
+      ],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/users/1122/edit": {
+      "url": "https://admin.ifiveme.com/users/1122/edit",
+      "timestamp": 1758811254.104447,
+      "title": "Modifier Contact » iFiveMe",
+      "content_type": "user_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=ApzyU9hkyUdESpL0ZY2gK-qJxrtxgTB-eIgHwFoiAdT4027siCVAdvydRKrTQ8JwHDFbHZ8Wzjc9V3HkAkuCmQ"
+        }
+      ],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/users/1220/login_as": {
+      "url": "https://admin.ifiveme.com/users/1220/login_as",
+      "timestamp": 1758811256.7770612,
+      "title": "500 - Internal server error",
+      "content_type": "user_management",
+      "navigation": [],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": {
+        "global_functions": [
+          "alert",
+          "atob",
+          "blur",
+          "btoa",
+          "cancelAnimationFrame",
+          "cancelIdleCallback",
+          "captureEvents",
+          "clearInterval",
+          "clearTimeout",
+          "close",
+          "confirm",
+          "createImageBitmap",
+          "fetch",
+          "find",
+          "focus",
+          "getComputedStyle",
+          "getSelection",
+          "matchMedia",
+          "moveBy",
+          "moveTo"
+        ],
+        "event_handlers": []
+      },
+      "content_summary": "Une erreur est survenue. Nous sommes désolé de cet inconvénient.\n\nSomething went wrong. We really are sorry for this inconvenience.\n\nInformations\nException: uninitialized constant IRB\nBacktrace:\n/app/config/initializers/airbrake.rb:89:in 'block in <main>'\n/app/vendor/bundle/ruby/3.4.0/gems/airbrake-...",
+      "page_functionality": []
+    },
+    "https://admin.ifiveme.com/users/670/login_as": {
+      "url": "https://admin.ifiveme.com/users/670/login_as",
+      "timestamp": 1758811259.4682372,
+      "title": "500 - Internal server error",
+      "content_type": "user_management",
+      "navigation": [],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": {
+        "global_functions": [
+          "alert",
+          "atob",
+          "blur",
+          "btoa",
+          "cancelAnimationFrame",
+          "cancelIdleCallback",
+          "captureEvents",
+          "clearInterval",
+          "clearTimeout",
+          "close",
+          "confirm",
+          "createImageBitmap",
+          "fetch",
+          "find",
+          "focus",
+          "getComputedStyle",
+          "getSelection",
+          "matchMedia",
+          "moveBy",
+          "moveTo"
+        ],
+        "event_handlers": []
+      },
+      "content_summary": "Une erreur est survenue. Nous sommes désolé de cet inconvénient.\n\nSomething went wrong. We really are sorry for this inconvenience.\n\nInformations\nException: uninitialized constant IRB\nBacktrace:\n/app/config/initializers/airbrake.rb:89:in 'block in <main>'\n/app/vendor/bundle/ruby/3.4.0/gems/airbrake-...",
+      "page_functionality": []
+    },
+    "https://admin.ifiveme.com/cards/new?card%5Buser_id%5D=3582": {
+      "url": "https://admin.ifiveme.com/cards/new?card%5Buser_id%5D=3582",
+      "timestamp": 1758811262.2070022,
+      "title": "Nouvelle carte professionnelle » iFiveMe",
+      "content_type": "card_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=u6QlVDgc5kc83gYIdJDpjuu00He28j4pv8agaNPLsnlB67nraF1vdoQJ0FbCXovVHQxN0VhlwGD6GdZMi6IxNA"
+        }
+      ],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/users/upload": {
+      "url": "https://admin.ifiveme.com/users/upload",
+      "timestamp": 1758811264.841363,
+      "title": "Télécharger des fichiers csv » iFiveMe",
+      "content_type": "user_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=YwUhwdznzTQCBJbw4sdpyqBgzF6dc7FY1Ba6l4BAZDaZSr1-jKZEBbrTQK5UCQuRVthR-HPkTxGRycyz2Cnnew"
+        }
+      ],
+      "data_tables": [
+        {
+          "index": 0,
+          "headers": [
+            "FIRST_NAME",
+            "LAST_NAME",
+            "EMAIL",
+            "ROLE"
+          ],
+          "total_rows": 4,
+          "sample_data": [
+            [
+              "FIRST_NAME",
+              "LAST_NAME",
+              "EMAIL",
+              "ROLE"
+            ],
+            [
+              "John",
+              "Smith",
+              "john@example.com",
+              "admin"
+            ],
+            [
+              "Max",
+              "Powell",
+              "max@example.com",
+              "user"
+            ],
+            [
+              "Sam",
+              "Biscit",
+              "sam@example.com",
+              "viewer"
+            ]
+          ],
+          "data_type": "users",
+          "sortable": false,
+          "filterable": false,
+          "paginated": false
+        }
+      ],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/users/1271/login_as": {
+      "url": "https://admin.ifiveme.com/users/1271/login_as",
+      "timestamp": 1758811267.448768,
+      "title": "500 - Internal server error",
+      "content_type": "user_management",
+      "navigation": [],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": {
+        "global_functions": [
+          "alert",
+          "atob",
+          "blur",
+          "btoa",
+          "cancelAnimationFrame",
+          "cancelIdleCallback",
+          "captureEvents",
+          "clearInterval",
+          "clearTimeout",
+          "close",
+          "confirm",
+          "createImageBitmap",
+          "fetch",
+          "find",
+          "focus",
+          "getComputedStyle",
+          "getSelection",
+          "matchMedia",
+          "moveBy",
+          "moveTo"
+        ],
+        "event_handlers": []
+      },
+      "content_summary": "Une erreur est survenue. Nous sommes désolé de cet inconvénient.\n\nSomething went wrong. We really are sorry for this inconvenience.\n\nInformations\nException: uninitialized constant IRB\nBacktrace:\n/app/config/initializers/airbrake.rb:89:in 'block in <main>'\n/app/vendor/bundle/ruby/3.4.0/gems/airbrake-...",
+      "page_functionality": []
+    },
+    "https://admin.ifiveme.com/users/976/login_as": {
+      "url": "https://admin.ifiveme.com/users/976/login_as",
+      "timestamp": 1758811270.015272,
+      "title": "500 - Internal server error",
+      "content_type": "user_management",
+      "navigation": [],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": {
+        "global_functions": [
+          "alert",
+          "atob",
+          "blur",
+          "btoa",
+          "cancelAnimationFrame",
+          "cancelIdleCallback",
+          "captureEvents",
+          "clearInterval",
+          "clearTimeout",
+          "close",
+          "confirm",
+          "createImageBitmap",
+          "fetch",
+          "find",
+          "focus",
+          "getComputedStyle",
+          "getSelection",
+          "matchMedia",
+          "moveBy",
+          "moveTo"
+        ],
+        "event_handlers": []
+      },
+      "content_summary": "Une erreur est survenue. Nous sommes désolé de cet inconvénient.\n\nSomething went wrong. We really are sorry for this inconvenience.\n\nInformations\nException: uninitialized constant IRB\nBacktrace:\n/app/config/initializers/airbrake.rb:89:in 'block in <main>'\n/app/vendor/bundle/ruby/3.4.0/gems/airbrake-...",
+      "page_functionality": []
+    },
+    "https://admin.ifiveme.com/users/843/resend_confirmation": {
+      "url": "https://admin.ifiveme.com/users/843/resend_confirmation",
+      "timestamp": 1758811272.544405,
+      "title": "500 - Internal server error",
+      "content_type": "user_management",
+      "navigation": [],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": {
+        "global_functions": [
+          "alert",
+          "atob",
+          "blur",
+          "btoa",
+          "cancelAnimationFrame",
+          "cancelIdleCallback",
+          "captureEvents",
+          "clearInterval",
+          "clearTimeout",
+          "close",
+          "confirm",
+          "createImageBitmap",
+          "fetch",
+          "find",
+          "focus",
+          "getComputedStyle",
+          "getSelection",
+          "matchMedia",
+          "moveBy",
+          "moveTo"
+        ],
+        "event_handlers": []
+      },
+      "content_summary": "Une erreur est survenue. Nous sommes désolé de cet inconvénient.\n\nSomething went wrong. We really are sorry for this inconvenience.\n\nInformations\nException: uninitialized constant IRB\nBacktrace:\n/app/config/initializers/airbrake.rb:89:in 'block in <main>'\n/app/vendor/bundle/ruby/3.4.0/gems/airbrake-...",
+      "page_functionality": []
+    },
+    "https://admin.ifiveme.com/cards?user=1168": {
+      "url": "https://admin.ifiveme.com/cards?user=1168",
+      "timestamp": 1758811275.166934,
+      "title": "Cartes professionnelles » iFiveMe",
+      "content_type": "card_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=bx4nixWEKrM9tJO-AJZSszLupTBFChNcaTH4g_wC9lSVUbs0RcWjgoVjReC2WDDoxFY4lqud7RUs7o6npGt1GQ"
+        },
+        {
+          "text": "←",
+          "href": null
+        },
+        {
+          "text": "1",
+          "href": null
+        },
+        {
+          "text": "→",
+          "href": null
+        }
+      ],
+      "data_tables": [
+        {
+          "index": 0,
+          "headers": [
+            "Nom sur la carte",
+            "Modèle de carte",
+            "URL de prévisualisation",
+            "URL",
+            "Contact",
+            "",
+            "https://benoitlegare.ifivem..."
+          ],
+          "total_rows": 2,
+          "sample_data": [
+            [
+              "Nom sur la carte",
+              "Modèle de carte",
+              "URL de prévisualisation",
+              "URL",
+              "Contact",
+              ""
+            ],
+            [
+              "Benoit Legare",
+              "fr",
+              "https://benoitlegare.ifivem...",
+              "fr",
+              "Benoit",
+              ""
+            ]
+          ],
+          "data_type": "users",
+          "sortable": false,
+          "filterable": false,
+          "paginated": true
+        }
+      ],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/keywords": {
+      "url": "https://admin.ifiveme.com/keywords",
+      "timestamp": 1758811277.9465768,
+      "title": "Tags » iFiveMe",
+      "content_type": "content_page",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=xKT2n_MKzVpnbwyWnKRkK9ycMc5sRKzbbwsZDGtqT6Q-62ogo0tEa9-42sgqagZwKiSsaILTUpIq1G8oMwPM6Q"
+        },
+        {
+          "text": "←",
+          "href": null
+        },
+        {
+          "text": "1",
+          "href": null
+        },
+        {
+          "text": "→",
+          "href": null
+        }
+      ],
+      "data_tables": [
+        {
+          "index": 0,
+          "headers": [
+            "Valeur",
+            "Créé le",
+            ""
+          ],
+          "total_rows": 22,
+          "sample_data": [
+            [
+              "Valeur",
+              "Créé le",
+              ""
+            ],
+            [
+              "administrateurs",
+              "mercredi 03 janvier 2024 16 h 46",
+              ""
+            ],
+            [
+              "Architecte Cloud",
+              "mercredi 03 janvier 2024 17 h 08",
+              ""
+            ],
+            [
+              "Concepteur Web",
+              "mercredi 03 janvier 2024 17 h 09",
+              ""
+            ],
+            [
+              "Contrôle d'accès",
+              "mercredi 03 janvier 2024 16 h 48",
+              ""
+            ]
+          ],
+          "data_type": "general_data",
+          "sortable": false,
+          "filterable": false,
+          "paginated": true
+        }
+      ],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/users/1018/resend_confirmation": {
+      "url": "https://admin.ifiveme.com/users/1018/resend_confirmation",
+      "timestamp": 1758811280.580912,
+      "title": "500 - Internal server error",
+      "content_type": "user_management",
+      "navigation": [],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": {
+        "global_functions": [
+          "alert",
+          "atob",
+          "blur",
+          "btoa",
+          "cancelAnimationFrame",
+          "cancelIdleCallback",
+          "captureEvents",
+          "clearInterval",
+          "clearTimeout",
+          "close",
+          "confirm",
+          "createImageBitmap",
+          "fetch",
+          "find",
+          "focus",
+          "getComputedStyle",
+          "getSelection",
+          "matchMedia",
+          "moveBy",
+          "moveTo"
+        ],
+        "event_handlers": []
+      },
+      "content_summary": "Une erreur est survenue. Nous sommes désolé de cet inconvénient.\n\nSomething went wrong. We really are sorry for this inconvenience.\n\nInformations\nException: uninitialized constant IRB\nBacktrace:\n/app/config/initializers/airbrake.rb:89:in 'block in <main>'\n/app/vendor/bundle/ruby/3.4.0/gems/airbrake-...",
+      "page_functionality": []
+    },
+    "https://admin.ifiveme.com/users/803": {
+      "url": "https://admin.ifiveme.com/users/803",
+      "timestamp": 1758811283.17852,
+      "title": "Contact » iFiveMe",
+      "content_type": "user_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=N-EQfk-Iy4RnKtrvh6iChRueOvRWHkhh2K7LZN5hATrNrozBH8lCtd_9DLExZuDe7SanUriJtiidcb1AhgiCdw"
+        }
+      ],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/users/1271": {
+      "url": "https://admin.ifiveme.com/users/1271",
+      "timestamp": 1758811285.842557,
+      "title": "Contact » iFiveMe",
+      "content_type": "user_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=KnKJSGsuCfQDD20GiwziDG76il5ilpi-rlMiqHgxXIrQPRX3O2-AxbvYu1g9woBXmEIX-IwBZvfrjFSMIFjfxw"
+        }
+      ],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    },
+    "https://admin.ifiveme.com/cards/new?card%5Buser_id%5D=695": {
+      "url": "https://admin.ifiveme.com/cards/new?card%5Buser_id%5D=695",
+      "timestamp": 1758811288.609167,
+      "title": "Nouvelle carte professionnelle » iFiveMe",
+      "content_type": "card_management",
+      "navigation": [
+        {
+          "text": "Organisations",
+          "href": "/organizations"
+        },
+        {
+          "text": "Langues",
+          "href": "/languages"
+        },
+        {
+          "text": "Réseaux sociaux",
+          "href": "/social_networks"
+        },
+        {
+          "text": "Tags",
+          "href": "/keywords"
+        },
+        {
+          "text": "Modèles de cartes",
+          "href": "/card_templates"
+        },
+        {
+          "text": "Cartes professionnelles",
+          "href": "/cards"
+        },
+        {
+          "text": "Contacts",
+          "href": "/users"
+        },
+        {
+          "text": "Mon profil",
+          "href": "/users/profile"
+        },
+        {
+          "text": "Se déconnecter",
+          "href": "/users/sign_out?authenticity_token=otYfZRxI-hG8h830tedmURP0Q7LUrURD6o8Ech3w5X9YmYPaTAlzIARQG6oDKQQK5UzeFDo6ugqvUHJWRZlmMg"
+        }
+      ],
+      "data_tables": [],
+      "forms": [],
+      "buttons": [],
+      "widgets": [],
+      "statistics": [],
+      "user_actions": [],
+      "api_endpoints": [],
+      "javascript_functions": [],
+      "content_summary": "",
+      "page_functionality": [],
+      "analysis_error": "sequence item 3: expected str instance, NoneType found"
+    }
+  },
+  "firecrawl_analysis": {
+    "status": "simulated",
+    "note": "Firecrawl nécessite une clé API pour analyse réelle",
+    "potential_analysis": {
+      "site_structure": "Détection complète de tous les liens et pages",
+      "content_extraction": "Extraction de tout le contenu textuel",
+      "metadata": "Meta tags, titres, descriptions",
+      "javascript_rendering": "Rendu complet du JavaScript côté client",
+      "api_discovery": "Découverte automatique des endpoints API"
+    }
+  },
+  "global_capabilities": {
+    "user_management": true,
+    "card_management": true,
+    "organization_management": false,
+    "template_management": false,
+    "data_export": false,
+    "search_filter": false,
+    "bulk_operations": false,
+    "communication": false,
+    "analytics": false,
+    "settings_config": false
+  },
+  "data_flow_analysis": [],
+  "user_journey_mapping": {
+    "user_management_journey": [
+      {
+        "step": "https://admin.ifiveme.com/users/1122/edit",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/1220/login_as",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/670/login_as",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/upload",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/1271/login_as",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/976/login_as",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/843/resend_confirmation",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/1018/resend_confirmation",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/803",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/users/1271",
+        "actions": []
+      }
+    ],
+    "card_management_journey": [
+      {
+        "step": "https://admin.ifiveme.com/cards?user=1002",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/cards/new?card%5Buser_id%5D=3582",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/cards?user=1168",
+        "actions": []
+      },
+      {
+        "step": "https://admin.ifiveme.com/cards/new?card%5Buser_id%5D=695",
+        "actions": []
+      }
+    ],
+    "data_export_journey": [],
+    "configuration_journey": []
+  },
+  "action_recommendations": [],
+  "automation_possibilities": [
+    {
+      "type": "data_extraction",
+      "page": "https://admin.ifiveme.com/cards?user=1002",
+      "description": "Extraire automatiquement 1 tables de données"
+    },
+    {
+      "type": "data_extraction",
+      "page": "https://admin.ifiveme.com/users/upload",
+      "description": "Extraire automatiquement 1 tables de données"
+    },
+    {
+      "type": "data_extraction",
+      "page": "https://admin.ifiveme.com/cards?user=1168",
+      "description": "Extraire automatiquement 1 tables de données"
+    },
+    {
+      "type": "data_extraction",
+      "page": "https://admin.ifiveme.com/keywords",
+      "description": "Extraire automatiquement 1 tables de données"
+    }
+  ],
+  "integration_points": []
+}
