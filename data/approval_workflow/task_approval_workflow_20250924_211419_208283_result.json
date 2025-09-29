@@ -1,0 +1,28 @@
+{
+  "id": "approval_workflow_20250924_211419_208283",
+  "type": "submit_for_approval",
+  "priority": 8,
+  "data": {
+    "title": "Post Twitter - Plus besoin de cartes papier",
+    "content": "🔥 Plus besoin de cartes papier !\n\nAvec iFiveMe, partagez votre profil pro d'un clic 📱✨\n\n✅ Cartes virtuelles interactives\n✅ Analytics temps réel\n✅ Intégration CRM\n\nEssayez gratuitement : ifiveme.com\n\n#iFiveMe #Digital #Networking",
+    "platform": "Twitter",
+    "created_by": "Jean Tremblay - Community Manager",
+    "scheduled_time": "2024-09-25T14:30:00"
+  },
+  "created_at": "2025-09-24 21:14:19.208289",
+  "status": "completed",
+  "result": {
+    "post_id": "25b514a1-0977-45de-9be5-736cddf69f86",
+    "approval_token": "dbebe88f-57f0-44ca-bad8-6b09acf7280d",
+    "status": "submitted_for_approval",
+    "approval_email_sent": true,
+    "expires_at": "2025-09-25T21:14:19.208424",
+    "approval_urls": {
+      "approve": "https://approve.ifiveme.com/approve/25b514a1-0977-45de-9be5-736cddf69f86/dbebe88f-57f0-44ca-bad8-6b09acf7280d",
+      "reject": "https://approve.ifiveme.com/reject/25b514a1-0977-45de-9be5-736cddf69f86/dbebe88f-57f0-44ca-bad8-6b09acf7280d",
+      "edit": "https://approve.ifiveme.com/edit/25b514a1-0977-45de-9be5-736cddf69f86/dbebe88f-57f0-44ca-bad8-6b09acf7280d"
+    },
+    "notification_sent_to": "richard@ifiveme.com"
+  },
+  "error": null
+}
