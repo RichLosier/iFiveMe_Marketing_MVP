@@ -1,0 +1,91 @@
+{
+  "id": "marketing_orchestrator_20250924_210618_458228",
+  "type": "create_campaign",
+  "priority": 10,
+  "data": {
+    "type": "brand_awareness",
+    "name": "Campagne iFiveMe Intégration Complète",
+    "budget": 5000.0,
+    "channels": [
+      "social_media",
+      "email",
+      "content"
+    ],
+    "duration_days": 14,
+    "target_audience": "entrepreneurs_quebec",
+    "objectives": [
+      "Test d'intégration multi-agents",
+      "Validation du workflow complet",
+      "Démonstration des capacités IA"
+    ]
+  },
+  "created_at": "2025-09-24 21:06:18.458238",
+  "status": "completed",
+  "result": {
+    "success": true,
+    "campaign_id": "campaign_9832e8c8",
+    "campaign": {
+      "id": "campaign_9832e8c8",
+      "name": "Campagne iFiveMe Intégration Complète",
+      "type": "CampaignType.BRAND_AWARENESS",
+      "status": "CampaignStatus.DRAFT",
+      "description": "Campagne de notoriété de marque",
+      "target_audience": "entrepreneurs_quebec",
+      "channels": [
+        "social_media",
+        "email",
+        "content"
+      ],
+      "budget": 5000.0,
+      "allocated_budget": {
+        "social_media": 2500.0,
+        "email": 1666.6666666666665,
+        "content": 1666.6666666666665
+      },
+      "start_date": "2025-09-24 21:06:18.458335",
+      "end_date": "2025-11-23 21:06:18.458339",
+      "objectives": [
+        "Test d'intégration multi-agents",
+        "Validation du workflow complet",
+        "Démonstration des capacités IA"
+      ],
+      "kpis": {
+        "target_roi": 3.0,
+        "target_conversion_rate": 0.05,
+        "target_cpa": 20.0,
+        "target_reach": 10000,
+        "target_engagement_rate": 0.08
+      },
+      "content_plan": {
+        "themes": [
+          "Innovation iFiveMe",
+          "Networking Digital",
+          "Témoignages Clients",
+          "Conseils Business"
+        ],
+        "content_calendar": {},
+        "asset_requirements": {},
+        "approval_workflow": [
+          "content_creator",
+          "orchestrator",
+          "final_approval"
+        ]
+      },
+      "automation_rules": [],
+      "created_at": "2025-09-24 21:06:18.458346",
+      "created_by": "orchestrator",
+      "priority": 5,
+      "tags": [],
+      "ab_tests": [],
+      "performance_data": {},
+      "notes": ""
+    },
+    "channel_tasks": {
+      "social_media": [],
+      "email": [],
+      "content": []
+    },
+    "message": "Campagne 'Campagne iFiveMe Intégration Complète' créée avec succès"
+  },
+  "error": null
+}
