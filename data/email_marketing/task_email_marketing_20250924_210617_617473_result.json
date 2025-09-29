@@ -1,0 +1,139 @@
+{
+  "id": "email_marketing_20250924_210617_617473",
+  "type": "segment_contacts",
+  "priority": 6,
+  "data": {
+    "segment_name": "active_users",
+    "total_contacts": 2000
+  },
+  "created_at": "2025-09-24 21:06:17.617476",
+  "status": "completed",
+  "result": {
+    "segment_name": "active_users",
+    "criteria": {},
+    "total_contacts": 900,
+    "sample_contacts": [
+      {
+        "email": "user_0@example.com",
+        "name": "Utilisateur 0",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.97,
+        "last_interaction": "2025-09-24 21:06:17.617520",
+        "status": "active"
+      },
+      {
+        "email": "user_1@example.com",
+        "name": "Utilisateur 1",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.92,
+        "last_interaction": "2025-09-23 21:06:17.617526",
+        "status": "active"
+      },
+      {
+        "email": "user_2@example.com",
+        "name": "Utilisateur 2",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.91,
+        "last_interaction": "2025-09-22 21:06:17.617529",
+        "status": "active"
+      },
+      {
+        "email": "user_3@example.com",
+        "name": "Utilisateur 3",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.97,
+        "last_interaction": "2025-09-21 21:06:17.617531",
+        "status": "active"
+      },
+      {
+        "email": "user_4@example.com",
+        "name": "Utilisateur 4",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.9,
+        "last_interaction": "2025-09-20 21:06:17.617533",
+        "status": "active"
+      },
+      {
+        "email": "user_5@example.com",
+        "name": "Utilisateur 5",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.99,
+        "last_interaction": "2025-09-19 21:06:17.617535",
+        "status": "active"
+      },
+      {
+        "email": "user_6@example.com",
+        "name": "Utilisateur 6",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.8,
+        "last_interaction": "2025-09-18 21:06:17.617537",
+        "status": "active"
+      },
+      {
+        "email": "user_7@example.com",
+        "name": "Utilisateur 7",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.89,
+        "last_interaction": "2025-09-17 21:06:17.617539",
+        "status": "active"
+      },
+      {
+        "email": "user_8@example.com",
+        "name": "Utilisateur 8",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.72,
+        "last_interaction": "2025-09-16 21:06:17.617541",
+        "status": "active"
+      },
+      {
+        "email": "user_9@example.com",
+        "name": "Utilisateur 9",
+        "segments": [
+          "active_users"
+        ],
+        "preferences": null,
+        "engagement_score": 0.99,
+        "last_interaction": "2025-09-15 21:06:17.617543",
+        "status": "active"
+      }
+    ],
+    "segment_characteristics": {
+      "avg_engagement_score": 0.88,
+      "active_percentage": 100.0,
+      "last_interaction_avg_days": 24.5
+    },
+    "recommended_campaigns": [
+      "newsletter",
+      "feature_announcements",
+      "community_highlights"
+    ]
+  },
+  "error": null
+}
